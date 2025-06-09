@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>星際碳險</title>
+  <style>
+    @font-face {
+      font-family: 'SweiXDPearlCJKtc-Medium';
+      src: url('font/SweiXDPearlCJKtc-Medium.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'SweiXDPearlCJKtc-DemiLight';
+      src: url('font/SweiXDPearlCJKtc-DemiLight.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'SweiXDPearlCJKtc-DemiLight', sans-serif;
+    }
+
+    .scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/星星.png') no-repeat 0 0;
+      background-size: contain;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .cat-container {
+      position: absolute;
+      left: 5vw;
+      bottom: 5vh;
+      transform: translate(-100%, 100%);
+      z-index: 3;
+      animation: slideIn 1.5s cubic-bezier(0.2, 0.8, 0.7, 1) forwards;
+    }
+
+    .flying-cat {
+      width: 30vw;
+      max-width: 470px;
+      height: auto;
+      animation: floatCloud 2s ease-in-out 1.5s infinite;
+    }
+
+    .cloud-container {
+      position: absolute;
+      left: -5vw;
+      bottom: 3vh;
+      transform: translate(-100%, 100%);
+      z-index: 4;
+      animation: slideIn 1s ease-out 0.5s forwards, floatCloud 2s ease-in-out 1.5s infinite;
+    }
+
+    .cloud-container img {
+      width: 30vw;
+      max-width: 450px;
+      height: auto;
+      opacity: 0.5;
+    }
+
+    .floating-title {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-flex;
+      gap: 10px;
+      font-size: 8vw;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out 1.5s forwards;
+      z-index: 2;
+    }
+
+    .floating-title span {
+      font-family: 'SweiXDPearlCJKtc-Medium';
+      color: #fff;
+    }
+
+    .floating-title span:nth-child(3) {
+      color: #f5d5a1;
+    }
+
+    .speech-box {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      max-width: 840px;
+      height: auto;
+      min-height: 200px;
+      border-radius: 20px;
+      background: rgba(7, 68, 70, 0.3);
+      border: 2px solid #fff;
+      box-shadow: 0 0 20px #428284, inset 0 0 35px #a8ece9;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      animation: growWidth 0.8s ease-out 1.5s forwards;
+      z-index: 2;
+    }
+
+    .speech-box p {
+      font-size: 1.3rem;
+      color: #fff;
+      line-height: 1.6;
+      text-align: left;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+      width: 100%;
+    }
+
+    .earth-container img {
+      width: 15vw;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .planet-container img {
+      width: 8vw;
+      max-width: 100px;
+      height: auto;
+      opacity: 0.7;
+    }
+
+    .color-block {
+      width: 50vw;
+      max-width: 700px;
+      height: 50vw;
+      max-height: 700px;
+    }
+
+    @media (max-width: 768px) {
+      .floating-title {
+        font-size: 12vw;
+        top: 15%;
+      }
+      .speech-box p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- 原 HTML 結構保持不變 -->
+</body>
+</html>
