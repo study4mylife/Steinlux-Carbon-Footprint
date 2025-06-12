@@ -21,6 +21,8 @@ EX: git push -u origin HOW<br>
 
 [交通](https://study4mylife.github.io/Steinlux-Carbon-Footprint/Steinlux-Carbon-Footprint/traffic.html)
 
+[娛樂](https://study4mylife.github.io/Steinlux-Carbon-Footprint/Steinlux-Carbon-Footprint/entertainment.html)
+
 [時尚](https://study4mylife.github.io/Steinlux-Carbon-Footprint/Steinlux-Carbon-Footprint/fashion.html)
 
 [住家](https://study4mylife.github.io/Steinlux-Carbon-Footprint/Steinlux-Carbon-Footprint/home.html)
