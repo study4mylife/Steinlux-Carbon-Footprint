@@ -1,6 +1,7 @@
 # Github使用方法(請按照順序才不會出錯)
 ## 先將repo檔案拉到本地(一定要做!!)
-git pull
+git checkout main<br>
+git pull origin main
 
 ## 如何創建新的分支
 git checkout -b 新分支名稱<br>
